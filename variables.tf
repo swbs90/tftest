@@ -13,12 +13,12 @@ variable "instance_name" {
   default     = "Provisioned by Terraform"
 }
 
-variable "vault_addr" {
+variable "VAULT_ADDR" {
   description = "Vault address"
   type = string
 }
 
-variable "vault_token" {
+variable "VAULT_TOKEN" {
   description = "Vault token"
   type = string
 }
