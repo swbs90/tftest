@@ -13,3 +13,12 @@ variable "instance_name" {
   default     = "Provisioned by Terraform"
 }
 
+variable "vault_addr" {
+  description = "Vault address"
+  default     = "localhost:8200"
+}
+
+variable "vault_token" {
+  description = "Vault token"
+  default     = "admin"
+}
