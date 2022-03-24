@@ -1,6 +1,12 @@
 provider "aws" {
   region = var.region
 }
+provider "vault" {
+  address = "{$var.vault_addr}"
+}
+data "vault_generic_secret" "name"{
+ path = "kv2/ec2"
+}
 
 data "aws_ami" "ubuntu" {
   most_recent = true
@@ -23,6 +29,6 @@ resource "aws_instance" "ubuntu" {
   instance_type = var.instance_type
 
   tags = {
-    Name = var.instance_name
+    Name = "${data.vault_generic_secret.name.data["instance_name"]}"
   }
 }
