@@ -2,8 +2,8 @@ provider "aws" {
   region = var.region
 }
 provider "vault" {
-  address = var.vault_addr
-  token = var.vault_token
+  address = var.VAULT_ADDR
+  token = var.VAULT_TOKEN
 }
 data "vault_generic_secret" "name"{
  path = "kv2/ec2"
