@@ -20,5 +20,5 @@ variable "vault_addr" {
 
 variable "vault_token" {
   description = "Vault token"
-  type = strng
+  type = string
 }
