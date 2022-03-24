@@ -15,10 +15,10 @@ variable "instance_name" {
 
 variable "vault_addr" {
   description = "Vault address"
-  default     = "localhost:8200"
+  type = string
 }
 
 variable "vault_token" {
   description = "Vault token"
-  default     = "admin"
+  type = strng
 }
