@@ -22,3 +22,8 @@ variable "VAULT_TOKEN" {
   description = "Vault token"
   type = string
 }
+
+variable "VAULT_NAMESPACE" {
+  description = "Vault namespace"
+  type = string
+}
