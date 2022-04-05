@@ -4,7 +4,6 @@ provider "aws" {
 provider "vault" {
   address = var.VAULT_ADDR
   token = var.VAULT_TOKEN
-  namespace = var.VAULT_NAMESPACE
 }
 data "vault_generic_secret" "name"{
  path = "kv2/ec2"
