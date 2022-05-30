@@ -12,18 +12,3 @@ variable "instance_name" {
   description = "EC2 instance name"
   default     = "Provisioned by Terraform"
 }
-
-variable "VAULT_ADDR" {
-  description = "Vault address"
-  type = string
-}
-
-variable "VAULT_TOKEN" {
-  description = "Vault token"
-  type = string
-}
-
-variable "VAULT_NAMESPACE" {
-  description = "Vault namespace"
-  type = string
-}
